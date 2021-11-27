@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Outdoor Adventures Reviews</title>
+    <style>
+      .navigation {
+        width: 90%;
+        margin: 0 auto;
+        padding: 2rem 0;
+      }
+
+      .nav-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+      .nav-item {
+        background-color: #a8aabc;
+        padding: 1.5rem 3rem;
+        border-top: 2px solid black;
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        border-top-right-radius: 1rem;
+        font-size: 1.6rem;
+      }
+      .form-container {
+        width: 80%;
+        margin: 0 auto;
+      }
+      .review-form {
+        background-color: #40538c;
+        color: white;
+        padding: 2rem;
+        font-size: 1.6rem;
+        border: 2px solid black;
+      }
+      fieldset {
+        border: 2px solid white;
+        padding: 0.5rem;
+        margin-bottom: 2rem;
+      }
+      legend {
+        padding: 0 0.5rem;
+      }
+      .rating-input-container {
+        margin-top: 1.5rem;
+      }
+
+      .infos {
+        margin-top: 0.5rem;
+      }
+
+      .infos input {
+        background-color: #ffffe6;
+      }
+
+      .infos div {
+        width: 30rem;
+        display: flex;
+        justify-content: space-between;
+        text-align: right;
+        flex-wrap: wrap;
+      }
+
+      .table-container {
+        width: 90%;
+        margin: 2rem auto;
+      }
+
+      .btn {
+        background-color: #ffffe6;
+        padding: 0.5rem 1rem;
+      }
+      @media only screen and (max-width: 599px) {
+        .form-container {
+          width: 90%;
+        }
+      }
+      @media only screen and (max-width: 499px) {
+        #commentArea {
+          width: 100%;
+        }
+      }
+
+      @media only screen and (max-width: 410px) {
+        .infos div {
+          width: 100%;
+        }
+        .tg-wrap {
+          overflow-x: auto;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/adventurestyles.css" />
+    <link rel="stylesheet" href="./css/printstyles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="page-title-container">
+        <h1 class="page-title">
+          Outdoor Adventure Trip Reviews
+          <span class="page-title-year">2020/2021</span>
+        </h1>
+      </div>
+      <nav class="navigation">
+        <ul class="nav-list">
+          <li class="nav-item nav-item1">
+            <a href="#" class="nav-link nav-link1">About Us</a>
+          </li>
+          <li class="nav-item nav-item2">
+            <a href="#" class="nav-link nav-link2">Travel</a>
+          </li>
+          <li class="nav-item nav-item3">
+            <a href="#" class="nav-link nav-link3">Photos</a>
+          </li>
+          <li class="nav-item nav-item4">
+            <a href="#" class="nav-link nav-link4">Shop</a>
+          </li>
+          <li class="nav-item nav-item5">
+            <a href="#" class="nav-link nav-link5">Reviews</a>
+          </li>
+          <li class="nav-item nav-item6">
+            <a href="./seminar.html" class="nav-link nav-link6">Seminars</a>
+          </li>
+          <li class="nav-item nav-item7">
+            <a href="#" class="nav-link nav-link7">Events</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content-container">
+      <section class="form-container">
+        <form
+          action="https://csunix.mohawkcollege.ca/tooltime/showit.pl"
+          method="post"
+          class="review-form"
+        >
+          <fieldset class="trip-reviews">
+            <legend>Trip Reviews</legend>
+            <select name="trip" id="trip" class="trips-list">
+              <option value="Alberta Rural">Alberta Rural</option>
+              <option value="B.C. Coast">B.C. Coast</option>
+              <option value="Ontario Lake Superior">
+                Ontario Lake Superior
+              </option>
+              <option value="PEI" selected>PEI</option>
+              <option value="Nova Scotia Cabot Trail">
+                Nova Scotia Cabot Trail
+              </option>
+            </select>
+            <select name="duration" id="duration" class="days-list">
+              <option value="5d">5 Days</option>
+              <option value="7d">7 Days</option>
+              <option value="10d">10 Days</option>
+              <option value="14d">14 Days</option>
+            </select>
+
+            <div class="rating-input-container">
+              <p class="caption">Your Rating:</p>
+              <div class="rating-box">
+                <input
+                  type="radio"
+                  name="rating"
+                  id="rating4"
+                  class="rating-input"
+                  value="4"
+                  checked
+                />
+                <label for="rating4">
+                  <img src="images/wheel_sm.jpg" alt="" />
+                  <img src="images/wheel_sm.jpg" alt="" />
+                  <img src="images/wheel_sm.jpg" alt="" />
+                  <img src="images/wheel_sm.jpg" alt="" />
+                </label>
+              </div>
+              <div class="rating-box">
+                <input
+                  type="radio"
+                  name="rating"
+                  id="rating3"
+                  class="rating-input"
+                  value="3"
+                />
+                <label for="rating3">
+                  <img src="images/wheel_sm.jpg" alt="" />
+                  <img src="images/wheel_sm.jpg" alt="" />
+                  <img src="images/wheel_sm.jpg" alt=""
+                /></label>
+              </div>
+              <div class="rating-box">
+                <input
+                  type="radio"
+                  name="rating"
+                  id="rating2"
+                  class="rating-input"
+                  value="2"
+                />
+                <label for="rating2">
+                  <img src="images/wheel_sm.jpg" alt="" />
+                  <img src="images/wheel_sm.jpg" alt=""
+                /></label>
+              </div>
+              <div class="rating-box">
+                <input
+                  type="radio"
+                  name="rating"
+                  id="rating1"
+                  class="rating-input"
+                  value="1"
+                />
+                <label for="rating1">
+                  <img src="images/wheel_sm.jpg" alt=""
+                /></label>
+              </div>
+            </div>
+            <div class="comment-box">
+              <p class="caption">Comments</p>
+              <textarea
+                name="comments"
+                id="commentArea"
+                cols="50"
+                rows="10"
+                required
+              ></textarea>
+            </div>
+          </fieldset>
+          <fieldset class="interested-trips">
+            <legend>
+              I would be interested in these trips: (check all that applies)
+            </legend>
+            <div class="trip-choice">
+              <input
+                type="checkbox"
+                name="interested"
+                id="tripChoice1"
+                value="coast"
+              />
+              <label for="tripChoice1">Sea or Lake Coast</label>
+            </div>
+            <div class="trip-choice">
+              <input
+                type="checkbox"
+                name="interested"
+                id="tripChoice2"
+                value="rural"
+              />
+              <label for="tripChoice2">Rural</label>
+            </div>
+            <div class="trip-choice">
+              <input
+                type="checkbox"
+                name="interested"
+                id="tripChoice3"
+                value="mountains"
+                checked
+              />
+              <label for="tripChoice3">Mountains</label>
+            </div>
+            <div class="trip-choice">
+              <input
+                type="checkbox"
+                name="interested"
+                id="tripChoice4"
+                value="other"
+              />
+              <label for="tripChoice4">
+                Other (please specify) <input type="text" />
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="about-you">
+            <legend>About You (optional)</legend>
+            <div class="season-select">
+              <p class="caption">
+                I usually prefer to trips this time of year (select all that
+                apply):
+              </p>
+              <select name="pref" id="seasonList" multiple>
+                <option value="winter">Winter</option>
+                <option value="spring">Spring</option>
+                <option value="summer">Summer</option>
+                <option value="fall">Fall</option>
+              </select>
+            </div>
+            <div class="infos">
+              <div class="first-name-input">
+                <label for="firstname">First Name</label>
+                <input
+                  type="text"
+                  name="firstname"
+                  id="firstname"
+                  maxlength="20"
+                />
+              </div>
+              <div class="last-name-input">
+                <label for="lastname">last Name</label>
+                <input
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  maxlength="20"
+                />
+              </div>
+              <div class="phoneNum-input">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  placeholder="123-456-7890"
+                  name="phone"
+                  id="phone"
+                  maxlength="12"
+                />
+              </div>
+              <div class="email-input">
+                <label for="emailaddress">Email Address</label>
+                <input
+                  type="email"
+                  placeholder="name@example.com"
+                  name="emailaddress"
+                  id="emailaddress"
+                  maxlength="40"
+                />
+              </div>
+            </div>
+            <input
+              type="text"
+              name="formname"
+              value="Your Name Trip Review"
+              hidden
+            />
+          </fieldset>
+          <button type="submit" class="btn btn-submit">SEND REVIEW</button>
+          <button type="reset" class="btn btn-cancel">CANCEL</button>
+        </form>
+      </section>
+      <section class="table-container">
+        <!-- <div class="tg-wrap">
+          <table border="2px">
+            <tbody>
+              <tr>
+                <td class="text-center gray-back" colspan="2">
+                  Sharon Scollard Trip Review
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center gray-back" colspan="2">
+                  Date Received: Thursday, July 16, 2020 at 17:17:36<br />Posted
+                  by: 142.222.230.62
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center gray-back">NAME</td>
+                <td class="text-center gray-back">VALUE(S)</td>
+              </tr>
+              <tr>
+                <td>firstname</td>
+                <td>Sharon</td>
+              </tr>
+              <tr>
+                <td>trip</td>
+                <td>PEI</td>
+              </tr>
+              <tr>
+                <td>pref</td>
+                <td>Winter, Spring, Summer, Fall</td>
+              </tr>
+              <tr>
+                <td>lastname</td>
+                <td>Scollard</td>
+              </tr>
+              <tr>
+                <td>duration</td>
+                <td>14d</td>
+              </tr>
+              <tr>
+                <td>phone</td>
+                <td>905-575-1212</td>
+              </tr>
+              <tr>
+                <td>comments</td>
+                <td>the trip was fantastic!!!</td>
+              </tr>
+              <tr>
+                <td>rating</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>interested</td>
+                <td>coast, rural, mountains, other</td>
+              </tr>
+              <tr>
+                <td>emailaddress</td>
+                <td>sharon.scollard@mohawkcollage.ca</td>
+              </tr>
+            </tbody>
+          </table>
+        </div> -->
+      </section>
+    </main>
+    <footer>
+      <img src="images/outdooradventurehorizontal.png" alt="" />
+    </footer>
+  </body>
+</html>

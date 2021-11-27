@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Outdoor Adventures Seminars</title>
+    <style type="text/css">
+      .navigation {
+        width: 90%;
+        margin: 0 auto;
+        padding: 2rem 0;
+      }
+
+      .nav-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+
+      .nav-item {
+        background-color: #a8aabc;
+        padding: 1.5rem 3rem;
+        border-top: 2px solid black;
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        border-top-right-radius: 1rem;
+        font-size: 1.6rem;
+      }
+
+      .content-container {
+        width: 100%;
+      }
+
+      .tables-container {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .tg-1-caption {
+        font-size: 1.4rem;
+        text-align: left;
+      }
+
+      .tg,
+      .tg-1 {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+
+      .tg {
+        width: 100%;
+      }
+
+      .tg td,
+      .tg-1 td {
+        font-family: Arial, sans-serif;
+        font-size: 1.4rem;
+        overflow: hidden;
+        padding: 1rem 0.5rem;
+        word-break: normal;
+        vertical-align: middle;
+      }
+
+      .tg-1 td {
+        padding-left: 0;
+        height: 3rem;
+        padding-top: 0;
+      }
+
+      .color-block {
+        width: 1rem;
+        height: 100%;
+        display: inline-block;
+      }
+      .purple-block {
+        background-color: #9262af;
+      }
+      .blue-block {
+        background-color: #00a5d6;
+      }
+      .green-block {
+        background-color: #99ee8a;
+      }
+      .yellow-block {
+        background-color: #f9f871;
+      }
+
+      .tg td {
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+      }
+
+      .tg th {
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        font-family: Arial, sans-serif;
+        font-size: 1.4rem;
+        font-weight: normal;
+        overflow: hidden;
+        padding: 1.5rem 0.5rem;
+        word-break: normal;
+        text-align: center !important;
+      }
+      .tg .tg-yellow-back {
+        background-color: #f9f871;
+        border-color: inherit;
+        text-align: left;
+      }
+      .tg .tg-light-blue {
+        background-color: #ddeeff;
+        border-color: inherit;
+        text-align: center;
+      }
+      .tg .tg-gray-back {
+        background-image: url("images/dust.jpg");
+        border-color: inherit;
+        text-align: center;
+      }
+      .tg .tg-green-back {
+        background-color: #99ee8a;
+        border-color: inherit;
+        text-align: left;
+      }
+      .tg .tg-heads {
+        background-color: #002759;
+        border-color: #000000;
+        color: #ffffff;
+        text-align: left;
+      }
+      .tg .tg-purple-back {
+        background-color: #9262af;
+        border-color: inherit;
+        text-align: left;
+      }
+      .tg .tg-blue-back {
+        background-color: #00a5d6;
+        border-color: inherit;
+        text-align: left;
+      }
+      .tg .tg-blank {
+        border-color: inherit;
+        text-align: left;
+      }
+      .tg-2-caption {
+        caption-side: bottom;
+        text-align: right;
+        font-size: 1.3rem;
+      }
+      @media only screen and (max-width: 1166px) {
+        html {
+          font-size: 60%;
+        }
+      }
+      @media only screen and (max-width: 767px) {
+        .tables-container {
+          width: 90%;
+        }
+        .tg-2-wrap,
+        .tg-1-wrap {
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+        }
+      }
+      @media only screen and (max-width: 656px) {
+        .tg {
+          width: 700px;
+        }
+      }
+      @media only screen and (max-width: 744px) {
+        .navigation {
+          width: 100%;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/adventurestyles.css" />
+    <link rel="stylesheet" href="./css/printstyles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="page-title-container">
+        <h1 class="page-title">
+          Outdoor Adventure Seminars
+          <span class="page-title-year">2020/2021</span>
+        </h1>
+      </div>
+      <nav class="navigation">
+        <ul class="nav-list">
+          <li class="nav-item nav-item1">
+            <a href="#" class="nav-link nav-link1">About Us</a>
+          </li>
+          <li class="nav-item nav-item2">
+            <a href="#" class="nav-link nav-link2">Travel</a>
+          </li>
+          <li class="nav-item nav-item3">
+            <a href="#" class="nav-link nav-link3">Photos</a>
+          </li>
+          <li class="nav-item nav-item4">
+            <a href="#" class="nav-link nav-link4">Shop</a>
+          </li>
+          <li class="nav-item nav-item5">
+            <a href="./reviews.html" class="nav-link nav-link5">Reviews</a>
+          </li>
+          <li class="nav-item nav-item6">
+            <a href="#" class="nav-link nav-link6">Seminars</a>
+          </li>
+          <li class="nav-item nav-item7">
+            <a href="#" class="nav-link nav-link7">Events</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content-container">
+      <section class="tables-container">
+        <div class="tg-1-wrap">
+          <table class="tg-1">
+            <tbody>
+              <caption class="tg-1-caption">
+                Legend:
+              </caption>
+              <tr>
+                <td>
+                  <div class="color-block purple-block"></div>
+                </td>
+                <td class="tg-1-0lax">Beginner cycling</td>
+                <td>
+                  <div class="color-block blue-block"></div>
+                </td>
+                <td class="tg-1-0lax">Long distance cycling</td>
+                <td>
+                  <div class="color-block green-block"></div>
+                </td>
+                <td class="tg-1-0lax">Hiking</td>
+                <td>
+                  <div class="color-block yellow-block"></div>
+                </td>
+                <td class="tg-1-0lax">Camping</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tg-2-wrap">
+          <table class="tg">
+            <thead>
+              <tr>
+                <th class="tg-heads">Day</th>
+                <th class="tg-heads">7 am - 9 am</th>
+                <th class="tg-heads">9 am - 11 am</th>
+                <th class="tg-heads">11 am - 12 pm</th>
+                <th class="tg-heads">12 pm - 2 pm</th>
+                <th class="tg-heads">2 pm - 4 pm</th>
+                <th class="tg-heads">6 pm - 8 pm</th>
+                <th class="tg-heads">8 pm - 10 pm</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tg-light-blue">Monday</td>
+                <td class="tg-gray-back" colspan="7">Reserved for groups</td>
+              </tr>
+              <tr>
+                <td class="tg-light-blue">Tuesday</td>
+                <td class="tg-green-back">Hiking</td>
+                <td class="tg-purple-back">Beginner cycling</td>
+                <td class="tg-yellow-back" colspan="5">Camping</td>
+              </tr>
+              <tr>
+                <td class="tg-light-blue">Wednesday</td>
+                <td class="tg-blue-back" rowspan="2">
+                  Long distance <br />
+                  Cycling part 1
+                </td>
+                <td class="tg-blank"></td>
+                <td class="tg-purple-back">Beginner cycling</td>
+                <td class="tg-yellow-back" rowspan="2">Camping in Asia</td>
+                <td class="tg-green-back" colspan="2" rowspan="3">
+                  Hiking<br />
+                </td>
+                <td class="tg-blue-back" rowspan="2">
+                  Long distance <br />
+                  cycling part 2
+                </td>
+              </tr>
+              <tr>
+                <td class="tg-light-blue">Thursday</td>
+                <td class="tg-yellow-back">Camping</td>
+                <td class="tg-blank"></td>
+              </tr>
+              <tr>
+                <td class="tg-light-blue">Friday</td>
+                <td class="tg-yellow-back" rowspan="4">Camping in Europe</td>
+                <td class="tg-purple-back" colspan="2">Beginner cycling</td>
+                <td class="tg-blank"></td>
+                <td class="tg-blank"></td>
+              </tr>
+              <tr>
+                <td class="tg-light-blue">Saturday</td>
+                <td class="tg-green-back" colspan="3" rowspan="2">Hiking</td>
+                <td class="tg-purple-back">Beginner cycling</td>
+                <td class="tg-blue-back" colspan="2" rowspan="2">
+                  Long distance cycling part 1 and part 2
+                </td>
+              </tr>
+              <tr>
+                <td class="tg-light-blue">Sunday</td>
+                <td class="tg-blank"></td>
+              </tr>
+              <tr>
+                <td class="tg-light-blue">Holidays</td>
+                <td class="tg-blue-back" colspan="2">Long distance cycling</td>
+                <td class="tg-gray-back" colspan="4">No seminars</td>
+              </tr>
+              <caption class="tg-2-caption">
+                Schedule is subject to change
+              </caption>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img src="images/outdooradventurehorizontal.png" alt="" />
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+@media only screen and (max-width: 899px) {
+  .nav-list {
+    width: 720px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .nav-item {
+    margin-right: 2rem;
+  }
+  .nav-item5,
+  .nav-item:last-child {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 744px) {
+  .navigation,
+  .nav-list {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 655px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media only screen and (max-width: 635px) {
+  .nav-item {
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .navigation {
+    width: 90%;
+  }
+  .nav-list {
+    flex-direction: column;
+  }
+  .nav-item {
+    margin-right: 0;
+    width: 100%;
+    text-align: center;
+  }
+}

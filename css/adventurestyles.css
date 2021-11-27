@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.header {
+  height: auto;
+}
+.page-title-container {
+  background-color: #e9efff;
+  text-align: center;
+}
+.page-title {
+  font-size: 4rem;
+}
+
+.page-title-year {
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  margin-top: 1rem;
+  border-top: 2px solid black;
+  padding: 2rem 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .page-title {
+    font-size: 3rem;
+  }
+}
